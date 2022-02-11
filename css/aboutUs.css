@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+.about-section{
+    /* background: url("../img/pic.jpg") no-repeat left; */
+    background:url("https://source.unsplash.com/1600x900/?technology,company");
+    /* width: 100%; */
+    background-color: white ;
+
+    background-size: cover;
+    /* background-color: #fdfdfd; */
+    overflow: hidden;
+}
+
+.inner-container{
+    width: 50%;
+    float: right;
+    background-color: white;
+    padding: 2% 2%;
+}
+ul.info{
+    position: relative;
+
+}
+ul.info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    align-items: flex-start;
+
+}
+ul.info li span:nth-child(1){
+    width: 20px;
+    min-width: 30px;
+
+}
+ul.info li span:nth-child(1) img{
+    max-width: 100%;
+
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    color:black;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 16px;
+    line-height: 30px;
+
+    margin-bottom: 40px;
+    margin-left: 15px;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+.insta-page{
+    color: black;
+    font-weight:500;
+}
+.insta-page:hover{
+    color: #aaf683;
+    /* filter: invert(1); */
+}
+
+
+/* .box {
+    color: black;
+    margin-top: 2%;
+}*/
+.box:hover{
+    border: 2px solid #a5f8d3;
+    border-radius: 2em;
+    background-color: #abc4ff;
+    color: white;
+    cursor: pointer;
+} 
+
+.media {
+    margin-top: 2%;
+    /* display: -ms-flexbox; */
+    display: flex;
+    /* -ms-flex-align: start; */
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.insta-link:hover{
+    filter:invert(1);
+}
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+    
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+    .insta-page:hover{
+    color: #a5f8d3;
+
+}
+}

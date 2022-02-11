@@ -1,0 +1,33 @@
+1. No Spam / Advertising / Self-promote in the forums
+2. Do not post copyright-infringing material
+3. Do not post “offensive” posts, links or images
+4. Do not cross post questions
+5. Do not PM users asking for help
+6. Remain respectful of other members at all times
+
+General Posting Guidelines
+
+1. Please use SEARCH first!
+2. Be DESCRIPTIVE and Don’t use “stupid” topic names
+
+
+
+
+
+
+
+<!-- <?php
+//database connection
+$servername="localhost";
+$username="root";
+$password="";
+$database="discussion_forum";
+
+$conn=mysqli_connect($servername,$username,$password,$database);
+if(!$conn){
+    echo 'eastablished';
+}
+
+
+$sql = "SELECT * FROM `blog` ORDER BY `timestamp` ASC";
+$result=mysqli_query($conn,$sql); -->

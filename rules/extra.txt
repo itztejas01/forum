@@ -1,0 +1,80 @@
+<?php
+// $showalert=false;
+// $method=$_SERVER['REQUEST_METHOD'];
+// if($method=="POST"){
+//     $title=$_POST['title'];
+//     $content=$_POST['content'];
+//     $sno=$_POST['sno'];
+//     $title = str_replace("<", "&lt;", $title);
+//     $title = str_replace(">", "&gt;", $title); 
+
+//     $content = str_replace("<", "&lt;", $content);
+//     $content= str_replace(">", "&gt;", $content);
+//     $sno=$_POST['sno'];
+//     $showalert=true;
+//     $sql="INSERT INTO `blog`(`user_id`, `title`, `body`, `timestamp`) VALUES ('$sno','$title','$content',current_timestamp())";
+//     $result=mysqli_query($conn,$sql);
+//     if($showalert){
+//         echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+//         <strong>Success!</strong> Your Post has been added.
+//         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+//           <span aria-hidden="true">&times;</span>
+//         </button>
+//       </div>
+//         ';
+//     }
+// }
+
+?>
+
+SELECT `blog_id`,`title`,`body` FROM `blog` WHERE `title` LIKE '%career%' OR `body` LIKE '%career%'
+UNION
+SELECT `dis_id`,`dis_title`, `dis_desc` FROM `discussion` WHERE `dis_title` LIKE '%career%' OR `dis_desc` LIKE '%career%'
+
+
+<label for="gender">Gender</label>
+
+
+<div class="col-md-4 my-2 mx-3">
+      <div class="card mx-2" style="width: 18rem;">
+  <img src="img/male.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Aakash Prabhudesai</h5>
+    <p class="card-text">Most Senoir Mate, Highly skilled and Always helpfull.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+      </div>
+      <div class="col-md-4 my-2 mx-3">
+      <div class="card mx-2" style="width: 18rem;">
+  <img src="img/male.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Tejas Chaplot</h5>
+    <p class="card-text">Most Senoir Mate, Highly skilled and Always helpfull.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+      </div>
+      <div class="col-md-4 my-2 mx-3">
+      <div class="card mx-2" style="width: 18rem;">
+  <img src="img/male.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Shivam Oza</h5>
+    <p class="card-text">Most Senoir Mate, Highly skilled and Always helpfull.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+      </div>
+
+      <li class="media">
+       
+      <a href="https://www.instagram.com/tejas_chaplot/" style="text-decoration: none;">
+      <img src="img/insta.png" style="width: 10em;margin-top:3px" class="mr-3" alt=""></a></li>
+
+      <li class="media">
+      
+      <a href="https://www.instagram.com/ishivamoza/"  style="text-decoration: none;"><img src="img/insta.png" style="width: 10em;margin-top:3px;" class="mr-3" alt=""></a></li>
+      <li class="media">
+    
+    <a href="https://www.instagram.com/prabhudesaiakash/" style="text-decoration: none;">
+    <img src="img/insta.png" style="width: 10em;margin-top:3px;" class="mr-3" alt=""></a></li>
